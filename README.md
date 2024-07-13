@@ -8,7 +8,7 @@ Example SMS and Single-Band (SB) data acquired at ramped-down 0.55T can be found
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12737931.svg)](https://doi.org/10.5281/zenodo.12737931)
 
-contains the raw data for Simultaneous Multi-Slice (SMS) and Single-Band (SB) real-time cardiac MRI acquired at 0.55T scanner. The data is stored as a MATLAB struct: k-space contains the raw data [Nsample x Narms x Ncoil], and kspace_info contains relevant acquisition-related information.
+contains the raw data for real-time cardiac MRI acquired at 0.55T scanner. The data is stored as a MATLAB struct: k-space contains the raw data [Nsample x Narms x Ncoil], and kspace_info contains relevant acquisition-related information.
 
 ## Usage
 
