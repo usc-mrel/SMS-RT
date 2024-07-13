@@ -1,6 +1,10 @@
 # SMS-RT
 
 Iterative reconstruction code for Simultaneous Multi-Slice (SMS) Real-time Cardiac MRI for spiral golden-angle acquisition. 
+A snasphot of this code used for paper can be seen here: 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12727826.svg)](https://doi.org/10.5281/zenodo.12727826)
+
 
 ## Data
 
