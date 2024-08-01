@@ -38,18 +38,18 @@ addpath thirdparty/
 %% User parameters
 
 % Dataset
-fn = 'example_SB_sl5.mat';     % Filename of the raw data.
+fn = 'example_SB_sl1.mat';     % Filename of the raw data.
 SMS_flag = 0;                  % 1 -> SMS , 0 -> SB
 
 % Regularization
-weight_tTV = 5e-2;            % Temporal TV Regularization Coeff
-weight_sTV = 5e-3;            % Spatial TV Regularization Coeff
+weight_tTV = 5e-2;             % Temporal TV Regularization Coeff
+weight_sTV = 5e-3;             % Spatial TV Regularization Coeff
 
 % Solver
-Nmaxiter = 100;             % max number of iterations 
-ifGPU    = 1;               % for iterative recon
-verbose  = 0;               % prints cost
-ifplot   = 0;               % plots cost function per iter
+Nmaxiter = 100;                % max number of iterations 
+ifGPU    = 1;                  % for iterative recon
+verbose  = 0;                  % prints cost
+ifplot   = 0;                  % plots cost function per iter
 
 % --------------------------------------------------------
 para.fn                 = fn;
@@ -74,7 +74,9 @@ para.Dxy = STV();
 
 %% conjugate gradient reconstruction
 
+tic
 [Image_recon, para] = STCR_NCG(Data, para);
+toc
 
 %% Display
 
