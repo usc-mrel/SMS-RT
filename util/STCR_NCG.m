@@ -103,12 +103,6 @@ Image_recon = gather(x);
 Image_recon = fliplr(rot90(Image_recon, -1));
 Image_recon = crop_half_FOV( abs(Image_recon));
 
-if ndims(Image_recon) == 3
-    Image_recon = Image_recon(:,:,20:end);
-else
-    Image_recon = Image_recon(:,:,20:end,:,:);
-end
-
 % fprintf(['Iterative STCR running time is ' num2str(para.CPUtime.interative_recon) 's' '\n'])
 fprintf([repmat('-', [1, 75]), '\n'])
 
