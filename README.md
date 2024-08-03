@@ -30,3 +30,11 @@ Set the relevant flags inside and run
 ```
 main.m
 ```
+
+### Inputs: 
+
+Iterative reconstruction returns resulting image series in ```Image_recon```. For SB, the output shape is [Nx x Ny x Nframes]; for SMS, the shape is [Nx x Ny x Nframes x Nslice]. 
+
+### Notes:
+
+The code is tested with MATLAB 2021a on a server equipped with 4x NVIDIA A100 GPU (40GB memory for each). May need to set ```ifGPU = 0``` for GPUs with memory <= 4GB or for no NVIDIA GPU case. 
